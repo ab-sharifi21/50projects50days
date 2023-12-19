@@ -16,7 +16,7 @@ panels.forEach((panel) => {
 // };
 
 
-// You can also do it this way:
+// You can also do removePanelOpenClass fucntion this way:
 function removePanelOpenClass () {
     panels.forEach((panel) => {
         panel.classList.remove('panel-open');

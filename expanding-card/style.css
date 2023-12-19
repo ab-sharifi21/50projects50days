@@ -28,6 +28,7 @@ body {
     margin: 0 1rem;
     position: relative;
     border-radius: 3rem;
+    transition: 1s ease-in;
 }
 
 .panel h2 {
