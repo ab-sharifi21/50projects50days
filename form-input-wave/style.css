@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    background-color: steelblue;
+    color: #fff;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 2.5rem 3.5rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.container h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.form-controler {
+    position: relative;
+}
+
+.form-controler input {
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid #fff;
+    padding: 1rem 0;
+}
+
+.form-controler input:focus {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.form-controler label {
+    font-size: 1rem;
+    font-weight: 500;
+    position: absolute;
+    left: 2px;
+    bottom: 15px;
+}
+
+
+form button {
+    background-color: lightblue;
+    font-size: 1rem;
+    padding: .9rem 1rem;
+    border: none;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+form button:active {
+    transform: scale(0.98);
+}
+
+.container p {
+    font-size: 1rem;
+}
+
+.container p > a {
+    text-decoration: none;
+    color: steelblue;
+    margin: 0 .5rem;
+}
+
+.container p > a:hover {
+    display: inline-block;
+    color: black;
+    transform: scale(1.2);
+}
+
+.form-controler label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.4s;
+  }
+  
+  .form-controler input:focus + label span,
+  .form-controler input:valid + label span {
+    color: lightblue;
+    transform: translateY(-25px);
+  }
